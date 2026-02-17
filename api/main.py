@@ -1,7 +1,9 @@
-from fastapi import FastAPI
-from dotenv import load_dotenv
-from routers.journal_router import router as journal_router
 import logging, logging.config
+
+from dotenv import load_dotenv
+from fastapi import FastAPI
+
+from .routers.journal_router import router as journal_router
 
 load_dotenv()
 
